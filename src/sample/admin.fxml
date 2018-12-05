@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAdmin">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Pane prefHeight="97.0" prefWidth="156.0">
+               <children>
+                  <FontAwesomeIcon iconName="XING" layoutY="50.0" size="3em" />
+                  <Text layoutX="28.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="132.80078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton fx:id="add" alignment="BASELINE_LEFT" onAction="#add" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Add admin" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USER" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="viewPayments" alignment="BASELINE_LEFT" onAction="#viewPayments" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USD" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="createEvent" alignment="BASELINE_LEFT" onAction="#CreateEvent" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Events" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="maintenance" alignment="BASELINE_LEFT" onAction="#maintenance" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="COG" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="viewResidents" alignment="BASELINE_LEFT" onAction="#viewResidents" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="GROUP" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#logOut" prefHeight="25.0" prefWidth="160.0" text="Log Out">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="155.0" prefHeight="73.0" prefWidth="447.0">
+         <children>
+            <TextField alignment="BASELINE_LEFT" prefHeight="29.0" prefWidth="149.0" promptText="Search">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <FontAwesomeIcon iconName="SEARCH" size="1.5em" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <FontAwesomeIcon iconName="BELL_O" size="1.5em">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <ImageView fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Pictures/if_avatar_1814089.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <FontAwesomeIcon iconName="ANGLE_DOWN" size="1.5em">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox layoutX="185.0" layoutY="100.0" prefHeight="278.0" prefWidth="401.0" style="-fx-background-color: #c0c0c0;">
+         <children>
+            <Pane prefHeight="83.0" prefWidth="401.0">
+               <children>
+                  <Text layoutX="158.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reminders">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make sure to add admin" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Check email" wrappingWidth="136.4869384765625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make sure maintenance is up to date" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

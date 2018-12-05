@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="eventsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResidentEvent">
+   <children>
+      <Label layoutX="335.0" layoutY="34.0" prefHeight="48.0" prefWidth="79.0" text="Events">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="eventText" layoutX="158.0" layoutY="131.0" prefHeight="262.0" prefWidth="433.0" />
+      <VBox prefHeight="400.0" prefWidth="156.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Pane prefHeight="97.0" prefWidth="156.0">
+               <children>
+                  <FontAwesomeIcon iconName="XING" layoutX="5.0" layoutY="61.0" size="3em" />
+                  <Text layoutX="34.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="107.46746826171875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="eventButton" mnemonicParsing="false" onAction="#showEvents" prefHeight="25.0" prefWidth="159.0" style="-fx-background-color: #48A5EA;" text="Refresh">
+               <graphic>
+                  <FontAwesomeIcon iconName="SPINNER" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <JFXButton onAction="#goBack" prefHeight="25.0" prefWidth="165.0" text="Button">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <FontAwesomeIcon iconName="ANGLE_RIGHT" layoutX="315.0" layoutY="69.0" size="2.5em" text="" />
+      <FontAwesomeIcon iconName="ANGLE_LEFT" layoutX="408.0" layoutY="68.0" size="2.5em" wrappingWidth="11.999999731779099" />
+   </children>
+</AnchorPane>

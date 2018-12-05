@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SubmitPayment">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <AnchorPane prefHeight="131.0" prefWidth="155.0">
+               <children>
+                  <Text layoutX="32.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="108.53392791748047">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIcon iconName="XING" layoutX="3.0" layoutY="50.0" size="3em" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="submitPayment" alignment="BASELINE_LEFT" onAction="#submit" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Submit" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="FILE" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="clearPayment" alignment="BASELINE_LEFT" onAction="#resetAll" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Clear" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="backPayment" alignment="CENTER" onAction="#goBack" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Back">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Text fx:id="datePaid" layoutX="193.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <Text layoutX="190.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" />
+      <Text layoutX="340.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Card Number" wrappingWidth="108.53392481803905" />
+      <Text layoutX="191.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your first and last name" />
+      <JFXTextField fx:id="date" layoutX="169.0" layoutY="252.0" onAction="#creditCardNumber" prefHeight="25.0" prefWidth="128.0" promptText="MM-DD-YYYY" />
+      <JFXTextField fx:id="CCV" layoutX="346.0" layoutY="187.0" onAction="#ccv" prefHeight="25.0" prefWidth="128.0" />
+      <JFXTextField fx:id="fullName" layoutX="186.0" layoutY="116.0" onAction="#fullName" prefHeight="25.0" prefWidth="261.0" />
+      <Text layoutX="246.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make a Payment">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="dollars" layoutX="177.0" layoutY="200.0" prefHeight="25.0" prefWidth="69.0" promptText="Dollars" />
+      <JFXTextField fx:id="cents" layoutX="244.0" layoutY="200.0" prefHeight="25.0" prefWidth="69.0" promptText="Cents" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="390.0" prefWidth="602.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentScreen">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Pane prefHeight="165.0" prefWidth="137.0">
+               <children>
+                  <FontAwesomeIcon iconName="USER" layoutX="54.0" layoutY="81.0" size="5em" />
+                  <JFXTextField fx:id="residentsName" alignment="CENTER" editable="false" layoutX="1.0" layoutY="112.0" prefHeight="25.0" prefWidth="153.0" promptText="Name" />
+               </children>
+            </Pane>
+            <JFXButton fx:id="LeaseDocument" alignment="BASELINE_LEFT" onAction="#lease" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Lease Document" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="FILE" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="studentMaintenance" alignment="BASELINE_LEFT" onAction="#maintenance" prefHeight="25.0" prefWidth="157.0" styleClass="hover_border" stylesheets="@../style.css" text="Submit Maintenance" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="COG" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="submitPayment" alignment="BASELINE_LEFT" onAction="#payment" prefHeight="25.0" prefWidth="153.0" styleClass="hover_border" stylesheets="@../style.css" text="Submit Payment" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USD" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="residentEvent" alignment="BASELINE_LEFT" onAction="#event" prefHeight="25.0" prefWidth="153.0" styleClass="hover_border" stylesheets="@../style.css" text="View Events" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USD" size="1.5em" />
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="logout" alignment="CENTER" onAction="#logOut" prefHeight="25.0" prefWidth="157.0" styleClass="hover_border" stylesheets="@../style.css" text="Log Out">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="137.0" prefHeight="100.0" prefWidth="464.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <FontAwesomeIcon iconName="BELL_O" size="1.5em">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <ImageView fitHeight="36.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/if_avatar_1814089.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <Text layoutX="270.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Community Events">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView layoutX="155.0" layoutY="132.0" prefHeight="268.0" prefWidth="447.0">
+        <columns>
+          <TableColumn minWidth="232.0" prefWidth="75.0" text="Events" />
+          <TableColumn minWidth="232.0" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+.hover_border:hover {
+    -fx-background-color: #48A5EA;
+    -fx-border-width: 0px 0px 0px 2px;
+    -fx-background-color: #34e7e4e0;
+    -fx-cursor: hand;
+}
+
+.cursor_hand {
+    -fx-cursor: hand;
+}
+
+.root {
+    -fx-background-image: url('apartment.jpg');
+}

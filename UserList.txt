@@ -1,0 +1,57 @@
+
+ First Name: Dan
+ Last Name: Bailey
+
+ ID: 002
+
+ Email Address: dpwbailey@gmail.com
+
+ Address: 6231 Tidewater Island Circle
+ City: Fort Myers
+ State: Florida
+ Zip Code: 33908
+
+ Date of Birth: 2-20-1997
+
+ First Name: Eric
+ Last Name: Hoffman
+
+ ID: 1
+
+ Email Address: studentemail@email.com
+
+ Address: 123 FGCU Road
+ City: Fort Myers
+ State: FL
+ Zip Code: 33913
+
+ Date of Birth: 11/11/11
+
+ First Name: Eric
+ Last Name: Hoffman
+
+ ID: 1
+
+ Email Address: studentemail@email.com
+
+ Address: 123 FGCU Road
+ City: Fort Myers
+ State: FL
+ Zip Code: 33913
+
+ Date of Birth: 11/11/11
+
+ First Name: Eric
+ Last Name: Hoffman
+
+ ID: 2
+
+ Email Address: studentemail@email.com
+
+ Address: 123 FGCU Road
+ City: Fort Myers
+ State: FL
+ Zip Code: 33913
+
+ Date of Birth: 11/11/11
+

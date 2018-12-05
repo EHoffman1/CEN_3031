@@ -1,0 +1,6 @@
+
+ Maintenance Type: Electric
+ Room Number: B-110
+ Details: Light out in kitchen
+ Full Name: Eric Hoffman
+ Email: studentemail@email.com

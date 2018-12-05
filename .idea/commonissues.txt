@@ -1,0 +1,1 @@
+Location not found: nullpointer -> rebuild project/specify controller in fxml/check that path is correct
